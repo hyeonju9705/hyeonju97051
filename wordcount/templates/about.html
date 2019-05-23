@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style>
+        aa:hover,
+        aa:focus {
+            animation-duration: 3s;
+            animation-name: rainbowLink;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes rainbowLink {
+            0% {
+                color: #ff2a2a;
+            }
+
+            15% {
+                color: #ff7a2a;
+            }
+
+            30% {
+                color: #ffc52a;
+            }
+
+            45% {
+                color: #43ff2a;
+            }
+
+            60% {
+                color: #2a89ff;
+            }
+
+            75% {
+                color: #202082;
+            }
+
+            90% {
+                color: #6b2aff;
+            }
+
+            100% {
+                color: #e82aff;
+            }
+        }
+
+        @font-face {
+            font-family: 'YunTaemin';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YunTaemin.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        p {
+            font-family: 'YunTaemin';
+            font-size: 30px;
+        }
+
+        aa {
+            font-size: 100px;
+        }
+
+        body {
+            font-family: 'YunTaemin';
+            background-color: #84b3ff;
+        }
+
+        bb {
+            color: #d66da3
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aa>ABOUT</aa>
+        <p>멋쟁이 사자처럼 at 삼육대학교 7기가 만든 wordcount 사이트 입니다<br>about에 마우스를 대보세요<br>
+            <bb>그리고 나가고싶으시면 밑에 하이퍼링크를 클릭해주세요</bb>
+        </p>
+        <a href="{% url 'home' %}">home으로 가기</a>
+    </div>
+</body>
+
+</html>
